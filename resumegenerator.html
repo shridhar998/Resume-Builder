@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resumegenerator.css" />
+</head>
+
+<body>
+    <h1>Quollab's Resume Generator</h1>
+    <div class="new">
+        This is a simple Resume Generator, in which you can enter your details<br> and can get a resume preview in a nice presentable manner.<br> Along with that you can also download the resume and print it too.
+    </div>
+    <form class="input-fields">
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Name" /><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" style="width: auto;"> <b>Male</b>
+        <input type="radio" name="gender" value="Female" style="width: auto;"><b> Female</b><br><br>
+
+        <label>Your Title:</label>
+        <input type="text" name="title" placeholder="eg web developer" /><br><br>
+        <label>Work Experience:</label>
+        <textarea name="workexp" placeholder="Work experience"></textarea><br><br>
+        <label>Academic Details: </label>
+        <textarea name="academics" placeholder="Academic details"></textarea><br><br>
+        <label>Objective:</label>
+        <input name="objective" placeholder="Objective" /><br><br>
+        <label>Skills:</label>
+        <textarea name="skills" placeholder="Skills"></textarea><br><br>
+        <label>Projects:</label>
+        <textarea name="projects" placeholder="Projects"></textarea><br><br>
+        <label>Achievements:</label>
+        <textarea name="achievements" placeholder="Achievements"></textarea><br><br>
+        <label>Contact Details:</label>
+        <textarea name="contact" placeholder="Contact"></textarea><br><br>
+    </form>
+
+    <!-- resume preview -->
+    <div class="output">
+
+    </div>
+    <!-- button for toggle   -->
+    <div class="btn">
+        <button onclick="toggle()">Preview or edit</button>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+    <script src='resumegenerator.js'></script>
+</body>
+
+</html>
